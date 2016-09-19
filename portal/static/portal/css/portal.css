@@ -1,6 +1,10 @@
+  html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  }
+
 body {
     background: white;
-    font-family: "arial" !important;
+    font-family: "arial";
 }
 
 
@@ -20,4 +24,12 @@ h6{
 
 .navbar{
 	background-color:#e0f7fa;
+}
+
+.container{
+	margin-top:50px;
+}
+
+.page-header h5{
+	font-weight:bold;
 }

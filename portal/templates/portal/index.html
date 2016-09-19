@@ -9,7 +9,7 @@
 <div class="row">
     {% if streams %}
         {% for stream in streams %}
-            <div class="col-sm-6 col-md-3">
+            <div class="col s4">
                 <div class="thumbnail">
                     <div class="caption">
                         <h6>{{ stream.course.course_number}}</h6>
@@ -20,7 +20,7 @@
             </div>
         {% endfor %}
     {% else %}
-        <div class="col-sm-12">
+        <div class="col s12">
             <p>There are currently no courses available for viewing.</p>
         </div>
     {% endif %}

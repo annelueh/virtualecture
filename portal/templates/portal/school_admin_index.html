@@ -8,12 +8,12 @@
 </div>
 {% endif %}
 <div class="page-header">
-  <h3>Administrator Portal for {{ school }}</h3>
+  <h5>Administrator Portal for {{ school }}</h5>
 </div>
 <div class="row">
-    <div class="col-md-12">
+    <div class="col s12">
         {% if professors %}
-            <h4>Professors</h4>
+            <h6>Professors</h6>
             <ul>
             {% for professor in professors %}
                 <li>
@@ -27,9 +27,9 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-md-12">
+    <div class="col s12">
         {% if professors_awaiting_approval %}
-            <h4>Professors awaiting approval</h4>
+            <h6>Professors awaiting approval</h6>
             <ul>
             {% for professor in professors_awaiting_approval %}
                 <li>

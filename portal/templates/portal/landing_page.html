@@ -13,7 +13,7 @@
     </div>
 {% endif %}
 <div class="row">
-    <div class="col-md-4">
+    <div class="col s4">
         <h3>Sign up </h3>
         <form action="{% url 'signup' %}" method="POST">
             {% csrf_token %}
@@ -21,7 +21,7 @@
             <input type="submit" class="btn btn-primary" value="Sign up">
         </form>
     </div>
-    <div class="col-md-4">
+    <div class="col s4">
         <h3>Login </h3>
         <form action="{% url 'login' %}" method="POST">
             {% if no_user_found %}
