@@ -37,7 +37,7 @@
                     {{ professor.user.username }}
                     <form style="display:inline-block" action="{% url 'activate_professor' professor.id %}" method="POST">
                         {% csrf_token %}
-                        <input type="submit" value="Approve account">
+                        <input type="submit" class="btn btn-primary light-blue accent-3" value="Approve account">
                     </form>
                 </li>
             {% endfor %}

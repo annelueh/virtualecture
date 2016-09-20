@@ -5,7 +5,7 @@
 <div class="jumbotron">
     <h1>Virtualecture</h1>
     <p>Stream and attend classes remotely.</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    <p><a class="btn btn-primary btn-lg light-blue accent-3" href="#" role="button">Learn more</a></p>
 </div>
 {% if professor_signed_up %}
     <div class="alert alert-success">
@@ -18,7 +18,7 @@
         <form action="{% url 'signup' %}" method="POST">
             {% csrf_token %}
             {% include 'portal/basic_form.html' with form=signup_form %}
-            <input type="submit" class="btn btn-primary" value="Sign up">
+            <input type="submit" class="btn btn-primary light-blue accent-3" value="Sign up">
         </form>
     </div>
     <div class="col s4">
@@ -32,7 +32,7 @@
             {% endif %}
             {% csrf_token %}
             {% include 'portal/basic_form.html' with form=login_form %}
-            <input type="submit" class="btn btn-primary" value="Login">
+            <input type="submit" class="btn btn-primary light-blue accent-3" value="Login">
         </form>
     </div>
 </div>
