@@ -41,10 +41,14 @@ h6{
 	font-weight:bold;
 }
 
-.card-icon{
-	right:20px;
+.btn-large i{
+	font-size:2.5rem;
 }
 
-.normal-button{
-	margin-left:25px;
+.card-button{ 
+
+}
+
+.card-action{
+	padding:10px 0px 0px 0px !important;
 }
