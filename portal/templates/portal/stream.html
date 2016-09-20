@@ -10,11 +10,13 @@
     {% if courses %}
         {% for course in courses %}
             <div class="col s4">
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h6>{{ course.course_number}}</h6>
+                <div class="card">
+                    <div class="card-content black-text">
+                        <span class="card-title"><h6>{{ course.course_number}}</h6></span>
                         <p>{{ course.course_name }}</p>
-                        <p><a href="{% url 'stream_course' course.id %}" class="btn btn-primary" role="button">Stream</a></p>
+                        <div class="card-action">
+                            <a href="{% url 'stream_course' course.id %}" class="btn-floating light-blue accent-3 card-icon" role="button"><i class="material-icons">videocam</i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -25,6 +27,5 @@
         </div>
     {% endif %}
 </div>
-<div class="container">
 
 {% endblock %}

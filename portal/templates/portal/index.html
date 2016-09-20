@@ -10,11 +10,11 @@
     {% if streams %}
         {% for stream in streams %}
             <div class="col s4">
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h6>{{ stream.course.course_number}}</h6>
+                <div class="card">
+                    <div class="card-content black-text">
+                        <span class="card-title"><h6>{{ stream.course.course_number}}</h6></span>
                         <p>{{ stream.course.course_name }}</p>
-                        <p><a href="{% url 'view_stream' stream.id %}" class="btn btn-primary" role="button">Go to class</a></p>
+                        <div class="card-action"><a href="{% url 'view_stream' stream.id %}" class="btn-floating light-blue accent-3" role="button"><i class="material-icons">visibility</i></a></div>
                     </div>
                 </div>
             </div>
