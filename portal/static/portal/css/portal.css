@@ -52,3 +52,20 @@ h6{
 .card-action{
 	padding:10px 0px 0px 0px !important;
 }
+
+
+.sign_up_text a{
+	position:relative;
+	top:10px;
+	font-size:12px;
+}
+
+.modal{
+	max-height:90% !important;
+	height:90% !important;
+}
+
+#signup-modal{
+	top:5% !important;
+
+}
